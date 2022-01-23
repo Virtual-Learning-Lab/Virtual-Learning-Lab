@@ -1,2 +1,2 @@
 # Virtual-Learning-Lab
-![]("/readme assets/💡_Virtual_Learning_Lab.png")
+![alt text](https://github.com/KevinGiesberts/Virtual-Learning-Lab/blob/main/💡_Virtual_Learning_Lab.png?raw=true)
