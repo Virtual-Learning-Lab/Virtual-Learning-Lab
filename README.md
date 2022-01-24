@@ -4,5 +4,5 @@
 ## What is Virtual Learning Lab?
 Virtual Learning Lab is a virtual reality game designed to mimic physical school/courses as best as possible, but with the added benefits of virtual reality.
 
-## ToDo:
-- [ ] Create ToDo list
+## To Do:
+- [ ] Create To Do list
