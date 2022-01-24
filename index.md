@@ -1,3 +1,3 @@
 ## Welcome to Virtual Learning Lab
 
-More information about Virtual Learning Lab is going to be shown on the website shortly.
+Virtual Learning Lab V0.01 Alpha is currently under development.
