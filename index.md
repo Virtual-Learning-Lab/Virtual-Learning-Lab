@@ -1,4 +1,4 @@
 ## Welcome to Virtual Learning Lab
 
 Virtual Learning Lab V0.01 is currently under development.
-Virtual Learning Lab will be available on VR headsets, pc, Android, and IOS
+Virtual Learning Lab will first be Andriod and IOS only and in later updates support for other platforms will be added.
