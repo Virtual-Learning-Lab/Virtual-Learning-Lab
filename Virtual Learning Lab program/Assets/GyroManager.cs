@@ -41,9 +41,8 @@ public class GyroManager : MonoBehaviour
         {
             gyro = Input.gyro;
             gyro.enabled = true;
+            gyroActive = gyro.enabled;
         }
-
-        gyroActive = gyro.enabled;
     }
     private void Update()
     {
