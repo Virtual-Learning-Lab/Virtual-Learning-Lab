@@ -25,4 +25,37 @@ public class CameraRotation : MonoBehaviour
         }
     }
 
+    [Header("Logic")]
+    private Gyroscope gyro;
+    private Quaternion rotation;
+    private bool gyroActive;
+
+    public void EnableGyro()
+    {
+        if (gyroActive)
+        {
+            return;
+        }
+
+        if (SystemInfo.supportsGyroscope)
+        {
+            gyro = Input.gyro;
+            gyro.enabled = true;
+        }
+
+        gyroActive = gyro.enabled;
+    }
+    private void Update()
+    {
+        if (gyroActive)
+        {
+            rotation = gyro.attitude;
+            Debug.Log(rotation);
+        }
+    }
+    public Quaternion GetGyroRotation()
+    {
+        return rotation;
+    }
+
 }
