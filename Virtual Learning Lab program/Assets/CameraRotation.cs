@@ -4,27 +4,25 @@ using UnityEngine;
 
 public class CameraRotation : MonoBehaviour
 {
-    public float mouseSensitivity = 100f;
-
-    public Transform playerBody;
-
-    float xRotation = 0f;
-
-    void Start()
+    private static CameraRotation instance;
+    public static CameraRotation Instance
     {
-        
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<CameraRotation>();
+                if (instance == null)
+                {
+                    instance = new GameObject("Spawned CameraRotation", typeof(CameraRotation)).GetComponent<CameraRotation>();
+                }
+            }
+            return instance;
+        }
+        set
+        {
+            instance = value;
+        }
     }
 
-    void Update()
-    {
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
-
-        xRotation -= mouseY;
-        // Remove clamp for sensors from phones
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-
-        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        playerBody.Rotate(Vector3.up * mouseX);
-    }
 }
