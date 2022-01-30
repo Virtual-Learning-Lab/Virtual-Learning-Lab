@@ -6,3 +6,7 @@ Virtual Learning Lab is a virtual reality game designed to mimic physical school
 
 ## How can you help?
 I can use all the help to build this game. So if you want to help me create this game and improve online school then take a look at the issues and milestones. If you have a suggestion for the game you can create an isseu.
+
+## Contact
+  - [Reddit]('https://www.reddit.com/user/KevinGiesberts')
+  - [SubReddit]('https://www.reddit.com/r/VirtualLearningLab/')
