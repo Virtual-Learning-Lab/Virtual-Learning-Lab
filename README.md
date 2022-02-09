@@ -10,4 +10,5 @@ I can use all the help to build this game. So if you want to help me create this
 ## Contact
   - [Reddit](https://www.reddit.com/user/StephenF369)
   - [SubReddit](https://www.reddit.com/r/VirtualLearningLab/)
-  - [Discord](https://discord.gg/s3mCmxecZR)
+  - [Discord server](https://discord.gg/s3mCmxecZR)
+  - [Discord](https://discordapp.com/users/934811008063651931)
