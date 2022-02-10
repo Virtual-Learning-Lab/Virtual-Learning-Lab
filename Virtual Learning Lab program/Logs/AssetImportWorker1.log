@@ -126,7 +126,10 @@ Domain Reload Profiling:
 			RebuildScriptCaches (53ms)
 			SetupLoadedEditorAssemblies (380ms)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (13ms)
 				SetLoadedEditorAssemblies (0ms)
@@ -471,11 +474,15 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (2ms)
 			RebuildScriptCaches (62ms)
 			SetupLoadedEditorAssemblies (395ms)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (14ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 				BeforeProcessingInitializeOnLoad (99ms)
 				ProcessInitializeOnLoadAttributes (233ms)
@@ -495,6 +502,8 @@ Unloading 26 unused Assets / (112.7 KB). Loaded Objects now: 3702.
 Memory consumption went from 127.2 MB to 127.1 MB.
 Total: 4.521700 ms (FindLiveObjects: 0.437900 ms CreateObjectMapping: 0.374900 ms MarkObjects: 3.549300 ms  DeleteObjects: 0.158400 ms)
 =======
+=======
+>>>>>>> Stashed changes
 				BeforeProcessingInitializeOnLoad (114ms)
 				ProcessInitializeOnLoadAttributes (227ms)
 				ProcessInitializeOnLoadMethodAttributes (26ms)
@@ -1365,6 +1374,9 @@ Unloading 3217 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 21 unused Assets / (79.8 KB). Loaded Objects now: 3744.
 Memory consumption went from 126.1 MB to 126.0 MB.
 Total: 4.532900 ms (FindLiveObjects: 0.486600 ms CreateObjectMapping: 0.244000 ms MarkObjects: 3.678300 ms  DeleteObjects: 0.121800 ms)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
