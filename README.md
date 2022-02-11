@@ -14,4 +14,4 @@ I can use all the help to build this game. So if you want to help me create this
   - [SubReddit](https://www.reddit.com/r/VirtualLearningLab/)
 
 ## License
-This project is licensed under [EUPL-1.2 LIcense](https://github.com/KevinGiesberts/Virtual-Learning-Lab/blob/main/LICENSE)
+This project is licensed under [European Union Public License 1.2](https://github.com/KevinGiesberts/Virtual-Learning-Lab/blob/main/LICENSE)
