@@ -12,3 +12,6 @@ I can use all the help to build this game. So if you want to help me create this
   - [Discord server](https://discord.gg/s3mCmxecZR)
   - [Reddit](https://www.reddit.com/user/StephenF369)
   - [SubReddit](https://www.reddit.com/r/VirtualLearningLab/)
+
+## License
+This project is licensed under [EUPL-1.2 LIcense](https://github.com/KevinGiesberts/Virtual-Learning-Lab/blob/main/LICENSE)
