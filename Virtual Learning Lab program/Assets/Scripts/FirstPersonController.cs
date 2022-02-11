@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class FirstPersonController : MonoBehaviour
 {
+    //Photon
+    PhotonView view;
+
     // References
     [SerializeField] private Transform cameraTransform;
     [SerializeField] private CharacterController characterController;
