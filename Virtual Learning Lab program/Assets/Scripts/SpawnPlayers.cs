@@ -7,11 +7,10 @@ public class SpawnPlayers : MonoBehaviour
 {
     public GameObject playerPrefab;
 
-    public float corY = 35;
     public float minX;
     public float maxX;
-    public float minZ;
-    public float maxZ;
+    public float minY;
+    public float maxY;
 
     private void Start()
     {
