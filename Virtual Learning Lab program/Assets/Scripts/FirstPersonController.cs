@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class FirstPersonController : MonoBehaviour
 {
+    //Photon
+    PhotonView view;
+
     // References
     [SerializeField] private Transform cameraTransform;
     [SerializeField] private CharacterController characterController;
@@ -37,122 +41,135 @@ public class FirstPersonController : MonoBehaviour
 
         // calculate the movement input dead zone
         moveInputDeadZone = Mathf.Pow(Screen.height / moveInputDeadZone, 2);
+
+        //Get view component
+        view = GetComponent<PhotonView>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Handles input
-        GetTouchInput();
-
-
-        if (rightFingerId != -1)
+        if (view.IsMine)
         {
-            // Ony look around if the right finger is being tracked
-            Debug.Log("Rotating");
-            LookAround();
-        }
+            // Handles input
+            GetTouchInput();
 
-        if (leftFingerId != -1)
-        {
-            // Ony move if the left finger is being tracked
-            Debug.Log("Moving");
-            Move();
+
+            if (rightFingerId != -1)
+            {
+                // Ony look around if the right finger is being tracked
+                Debug.Log("Rotating");
+                LookAround();
+            }
+
+            if (leftFingerId != -1)
+            {
+                // Ony move if the left finger is being tracked
+                Debug.Log("Moving");
+                Move();
+            }
         }
     }
 
     void GetTouchInput()
     {
-        // Iterate through all the detected touches
-        for (int i = 0; i < Input.touchCount; i++)
+        if (view.IsMine)
         {
-
-            Touch t = Input.GetTouch(i);
-
-            // Check each touch's phase
-            switch (t.phase)
+            // Iterate through all the detected touches
+            for (int i = 0; i < Input.touchCount; i++)
             {
-                case TouchPhase.Began:
 
-                    if (t.position.x < halfScreenWidth && leftFingerId == -1)
-                    {
-                        // Start tracking the left finger if it was not previously being tracked
-                        leftFingerId = t.fingerId;
+                Touch t = Input.GetTouch(i);
 
-                        // Set the start position for the movement control finger
-                        moveTouchStartPosition = t.position;
-                    }
-                    else if (t.position.x > halfScreenWidth && rightFingerId == -1)
-                    {
-                        // Start tracking the rightfinger if it was not previously being tracked
-                        rightFingerId = t.fingerId;
-                    }
+                // Check each touch's phase
+                switch (t.phase)
+                {
+                    case TouchPhase.Began:
 
-                    break;
-                case TouchPhase.Ended:
-                case TouchPhase.Canceled:
+                        if (t.position.x < halfScreenWidth && leftFingerId == -1)
+                        {
+                            // Start tracking the left finger if it was not previously being tracked
+                            leftFingerId = t.fingerId;
 
-                    if (t.fingerId == leftFingerId)
-                    {
-                        // Stop tracking the left finger
-                        leftFingerId = -1;
-                        Debug.Log("Stopped tracking left finger");
-                    }
-                    else if (t.fingerId == rightFingerId)
-                    {
-                        // Stop tracking the right finger
-                        rightFingerId = -1;
-                        Debug.Log("Stopped tracking right finger");
-                    }
+                            // Set the start position for the movement control finger
+                            moveTouchStartPosition = t.position;
+                        }
+                        else if (t.position.x > halfScreenWidth && rightFingerId == -1)
+                        {
+                            // Start tracking the rightfinger if it was not previously being tracked
+                            rightFingerId = t.fingerId;
+                        }
 
-                    break;
-                case TouchPhase.Moved:
+                        break;
+                    case TouchPhase.Ended:
+                    case TouchPhase.Canceled:
 
-                    // Get input for looking around
-                    if (t.fingerId == rightFingerId)
-                    {
-                        lookInput = t.deltaPosition * cameraSensitivity * Time.deltaTime;
-                    }
-                    else if (t.fingerId == leftFingerId)
-                    {
+                        if (t.fingerId == leftFingerId)
+                        {
+                            // Stop tracking the left finger
+                            leftFingerId = -1;
+                            Debug.Log("Stopped tracking left finger");
+                        }
+                        else if (t.fingerId == rightFingerId)
+                        {
+                            // Stop tracking the right finger
+                            rightFingerId = -1;
+                            Debug.Log("Stopped tracking right finger");
+                        }
 
-                        // calculating the position delta from the start position
-                        moveInput = t.position - moveTouchStartPosition;
-                    }
+                        break;
+                    case TouchPhase.Moved:
 
-                    break;
-                case TouchPhase.Stationary:
-                    // Set the look input to zero if the finger is still
-                    if (t.fingerId == rightFingerId)
-                    {
-                        lookInput = Vector2.zero;
-                    }
-                    break;
+                        // Get input for looking around
+                        if (t.fingerId == rightFingerId)
+                        {
+                            lookInput = t.deltaPosition * cameraSensitivity * Time.deltaTime;
+                        }
+                        else if (t.fingerId == leftFingerId)
+                        {
+
+                            // calculating the position delta from the start position
+                            moveInput = t.position - moveTouchStartPosition;
+                        }
+
+                        break;
+                    case TouchPhase.Stationary:
+                        // Set the look input to zero if the finger is still
+                        if (t.fingerId == rightFingerId)
+                        {
+                            lookInput = Vector2.zero;
+                        }
+                        break;
+                }
             }
         }
     }
 
     void LookAround()
     {
+        if (view.IsMine)
+        {
+            // vertical (pitch) rotation
+            cameraPitch = Mathf.Clamp(cameraPitch - lookInput.y, -90f, 90f);
+            cameraTransform.localRotation = Quaternion.Euler(cameraPitch, 0, 0);
 
-        // vertical (pitch) rotation
-        cameraPitch = Mathf.Clamp(cameraPitch - lookInput.y, -90f, 90f);
-        cameraTransform.localRotation = Quaternion.Euler(cameraPitch, 0, 0);
-
-        // horizontal (yaw) rotation
-        transform.Rotate(transform.up, lookInput.x);
+            // horizontal (yaw) rotation
+            transform.Rotate(transform.up, lookInput.x);
+        }
     }
 
     void Move()
     {
+        if (view.IsMine)
+        {
+            // Don't move if the touch delta is shorter than the designated dead zone
+            if (moveInput.sqrMagnitude <= moveInputDeadZone) return;
 
-        // Don't move if the touch delta is shorter than the designated dead zone
-        if (moveInput.sqrMagnitude <= moveInputDeadZone) return;
-
-        // Multiply the normalized direction by the speed
-        Vector2 movementDirection = moveInput.normalized * moveSpeed * Time.deltaTime;
-        // Move relatively to the local transform's direction
-        characterController.Move(transform.right * movementDirection.x + transform.forward * movementDirection.y);
+            // Multiply the normalized direction by the speed
+            Vector2 movementDirection = moveInput.normalized * moveSpeed * Time.deltaTime;
+            // Move relatively to the local transform's direction
+            characterController.Move(transform.right * movementDirection.x + transform.forward * movementDirection.y);
+        }
     }
 
 }
