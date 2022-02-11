@@ -41,6 +41,9 @@ public class FirstPersonController : MonoBehaviour
 
         // calculate the movement input dead zone
         moveInputDeadZone = Mathf.Pow(Screen.height / moveInputDeadZone, 2);
+
+        //Get view component
+        view = GetComponent<PhotonView>();
     }
 
     // Update is called once per frame
