@@ -9,8 +9,9 @@ public class SpawnPlayers : MonoBehaviour
 
     public float minX;
     public float maxX;
-    public float minY;
-    public float maxY;
+    public float standardY = 35;
+    public float minZ;
+    public float maxZ;
 
     private void Start()
     {
