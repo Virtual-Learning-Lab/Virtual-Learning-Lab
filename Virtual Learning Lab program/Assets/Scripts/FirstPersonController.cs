@@ -49,22 +49,25 @@ public class FirstPersonController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Handles input
-        GetTouchInput();
-
-
-        if (rightFingerId != -1)
+        if (view.IsMine)
         {
-            // Ony look around if the right finger is being tracked
-            Debug.Log("Rotating");
-            LookAround();
-        }
+            // Handles input
+            GetTouchInput();
 
-        if (leftFingerId != -1)
-        {
-            // Ony move if the left finger is being tracked
-            Debug.Log("Moving");
-            Move();
+
+            if (rightFingerId != -1)
+            {
+                // Ony look around if the right finger is being tracked
+                Debug.Log("Rotating");
+                LookAround();
+            }
+
+            if (leftFingerId != -1)
+            {
+                // Ony move if the left finger is being tracked
+                Debug.Log("Moving");
+                Move();
+            }
         }
     }
 
