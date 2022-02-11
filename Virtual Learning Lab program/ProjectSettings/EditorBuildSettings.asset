@@ -9,11 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu Scene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Join Room Scene.unity
-    guid: 90998b514d79848498da8bb13e085212
-  - enabled: 1
-    path: Assets/Scenes/Create Room Scene.unity
-    guid: c6576169019376946b073d9a45929f6b
+    path: Assets/Scenes/Loading Scene.unity
+    guid: 805e6b1042a6f0a4d8a534d75453a3fa
   - enabled: 1
     path: Assets/Scenes/Settings Scene.unity
     guid: e612971dbc8e7ae4593693068460c964
@@ -21,8 +18,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Credits Scene.unity
     guid: 50ff1d170950d4c4285983de0d9e2a7f
   - enabled: 1
-    path: Assets/Scenes/Loading Scene.unity
-    guid: 805e6b1042a6f0a4d8a534d75453a3fa
+    path: Assets/Scenes/JoinCreate Room Scene.unity
+    guid: 537447fbaf1ac714690a4e6373053809
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: a784ef738be2fb2408a28dc58ce91897
