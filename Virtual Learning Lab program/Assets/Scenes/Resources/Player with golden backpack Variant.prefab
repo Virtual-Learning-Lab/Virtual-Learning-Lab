@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a059b1806089ae44ea84c544393c4add, type: 2}
     - target: {fileID: 4220281293422838729, guid: 42e0e64954e78724f802be3b04e4782c, type: 3}
       propertyPath: m_Name
-      value: Player with backpack Variant
+      value: Player with golden backpack Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4220281293422838733, guid: 42e0e64954e78724f802be3b04e4782c, type: 3}
       propertyPath: m_RootOrder
@@ -62,6 +62,10 @@ PrefabInstance:
     - target: {fileID: 4924811310437463933, guid: 42e0e64954e78724f802be3b04e4782c, type: 3}
       propertyPath: sceneViewId
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949739026351071419, guid: 42e0e64954e78724f802be3b04e4782c, type: 3}
+      propertyPath: m_RotationModel.SynchronizeEnabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42e0e64954e78724f802be3b04e4782c, type: 3}
