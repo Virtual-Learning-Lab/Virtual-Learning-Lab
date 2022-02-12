@@ -23,11 +23,12 @@ class main:
 
         self.remove_btn = Button(self.window, text='Remove CREDITS: ')
         self.remove_btn.grid(row=3, column=0)
-        self.add_btn = Button(self.window, text='Add CREDITS: ')
+        self.add_btn = Button(self.window, text='Add CREDITS: ', command=self.add)
         self.add_btn.grid(row=3, column=1)
 
     def add(self):
-        pass
+        self.credits_md_path = "/./CREDITS.md"
+        print(open(self.credits_md_path).text())
 
     def remove(self):
         pass
