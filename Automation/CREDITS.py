@@ -1,6 +1,7 @@
 import tkinter
 from tkinter import *
 import sys
+import os
 
 class main:
     def __init__(self, window):
@@ -28,8 +29,9 @@ class main:
         self.add_btn.grid(row=3, column=1)
 
     def add(self):
-        self.CREDITS_md_path = open("DUMMY_CREDITS.md") #open(sys.path[0] + '/../CREDITS.md')
-        self.CREDITS_txt_path = open("DUMMY_CREDITS.txt") #open(sys.path[0] + '/../Virtual Learning Lab program/Assets/Scenes/Resources/CREDITS.txt')
+        self.here = sys.path[0]
+        self.CREDITS_md_path = open(os.path.join(self.here, "DUMMY_CREDITS.md")) #open(sys.path[0] + '/../CREDITS.md')
+        self.CREDITS_txt_path = open(os.path.join(self.here, "DUMMY_CREDITS.txt")) #open(sys.path[0] + '/../Virtual Learning Lab program/Assets/Scenes/Resources/CREDITS.txt')
 
         self.title_format = "## "
         self.name_format = "[]"
@@ -38,9 +40,11 @@ class main:
         print(self.CREDITS_md_path.read())
         print(self.CREDITS_txt_path.read())
 
-        self.title_value = self.title_inp.get('0.0', END)
-        self.name_value = self.name_inp.get('0.0', END)
-        self.link_value = self.link_inp.get('0.0', END)
+        self.title_value = self.title_inp.get()
+        self.name_value = self.name_inp.get()
+        self.link_value = self.link_inp.get()
+
+        self.CREDITS_md_path.write()
 
     def remove(self):
         pass
