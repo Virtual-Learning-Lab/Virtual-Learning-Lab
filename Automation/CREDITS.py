@@ -29,8 +29,13 @@ class main:
 
     def add(self):
         self.CREDITS_md_path = open(sys.path[0] + '/../CREDITS.md')
-        self.CREDITS_txt_path = open(sys.path[0] + '/../CREDITS.md')
-        print(f.read())
+        self.CREDITS_txt_path = open(sys.path[0] + '/../Virtual Learning Lab program/Assets/Scenes/Resources/CREDITS.txt')
+
+        self.title_format = "## "
+        self.name_format = "[]"
+        self.link_format = "()"
+        print(self.CREDITS_md_path.read())
+        print(self.CREDITS_txt_path.read())
 
     def remove(self):
         pass
