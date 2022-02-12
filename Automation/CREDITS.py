@@ -22,9 +22,14 @@ class main:
         self.link_inp.grid(row=2, column=1)
 
         self.remove_btn = Button(self.window, text='Remove CREDITS: ')
-        self.remove_btn.grid(row=3, column=1)
+        self.remove_btn.grid(row=3, column=0)
+        self.add_btn = Button(self.window, text='Add CREDITS: ')
+        self.add_btn.grid(row=3, column=1)
 
-    def update(self):
+    def add(self):
+        pass
+
+    def remove(self):
         pass
 
 if __name__ == "__main__":
