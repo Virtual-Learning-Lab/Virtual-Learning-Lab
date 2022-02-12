@@ -1,6 +1,6 @@
 import tkinter
 from tkinter import *
-import os.path
+import sys
 
 class main:
     def __init__(self, window):
@@ -28,7 +28,9 @@ class main:
         self.add_btn.grid(row=3, column=1)
 
     def add(self):
-        f = open(os.path.dirname('/../CREDITS.txt'))
+        self.CREDITS_md_path = open(sys.path[0] + '/../CREDITS.md')
+        self.CREDITS_txt_path = open(sys.path[0] + '/../CREDITS.md')
+        print(f.read())
 
     def remove(self):
         pass
