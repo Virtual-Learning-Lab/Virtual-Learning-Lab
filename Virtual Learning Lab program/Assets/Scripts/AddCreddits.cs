@@ -5,7 +5,7 @@ using System.IO;
 
 public class AddCreddits : MonoBehaviour
 {
-    public 
+    
     void Start()
     {
         
