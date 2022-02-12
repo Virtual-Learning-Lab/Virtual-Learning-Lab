@@ -28,14 +28,19 @@ class main:
         self.add_btn.grid(row=3, column=1)
 
     def add(self):
-        self.CREDITS_md_path = open(sys.path[0] + '/../CREDITS.md')
-        self.CREDITS_txt_path = open(sys.path[0] + '/../Virtual Learning Lab program/Assets/Scenes/Resources/CREDITS.txt')
+        self.CREDITS_md_path = open("DUMMY_CREDITS.md") #open(sys.path[0] + '/../CREDITS.md')
+        self.CREDITS_txt_path = open("DUMMY_CREDITS.txt") #open(sys.path[0] + '/../Virtual Learning Lab program/Assets/Scenes/Resources/CREDITS.txt')
 
         self.title_format = "## "
         self.name_format = "[]"
         self.link_format = "()"
+
         print(self.CREDITS_md_path.read())
         print(self.CREDITS_txt_path.read())
+
+        self.title_value = self.title_inp.get('0.0', END)
+        self.name_value = self.name_inp.get('0.0', END)
+        self.link_value = self.link_inp.get('0.0', END)
 
     def remove(self):
         pass
