@@ -75,6 +75,8 @@ class main:
                 #print("file is empty")
                 self.CREDITS_md_file_write.write(f"{self.title_format}{self.title_value}\n")
                 self.CREDITS_md_file_write.write(f"{self.name_format[0]}{self.name_value}{self.name_format[1]}{self.link_format[0]}{self.link_value}{self.link_format[1]}  ")
+            elif not self.CREDITS_md_content == "":
+                self.CREDITS_md_file_write.write({self.CREDITS_md_content})
             else:
                 error = True
 
@@ -94,7 +96,7 @@ class main:
         if errors == None:
             messagebox.showinfo('Success', 'Credits added successfully')
         else:
-            messagebox.showinfo('Error', 'Something went wrong while generating the credits.')
+            messagebox.showerror('Error', 'Something went wrong while generating the credits.')
 
     def remove(self):
         pass
