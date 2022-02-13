@@ -1,5 +1,6 @@
 import tkinter
 from tkinter import *
+from tkinter import messagebox
 import sys
 import os
 
@@ -25,8 +26,17 @@ class main:
 
         self.remove_btn = Button(self.window, text='Remove CREDITS: ')
         self.remove_btn.grid(row=3, column=0)
-        self.add_btn = Button(self.window, text='Add CREDITS: ', command=self.add)
+        self.add_btn = Button(self.window, text='Add CREDITS: ', command=lambda addremove="add": self.check_content(addremove))
         self.add_btn.grid(row=3, column=1)
+
+    def check_content(self, addremove):
+        if self.title.get() == "":
+            messagebox.showerror('Title entry is empty', 'The title entry is empty. Please give a title.')
+            return
+        elif self.link.get() == "":
+            messagebox.showerror('Link entry is empty', 'The link entry is empty. Please give a link.')
+            return
+
 
     def add(self):
         self.here = sys.path[0]
@@ -37,14 +47,16 @@ class main:
         self.name_format = "[]"
         self.link_format = "()"
 
-        self.CREDITS_md_content = self.CREDITS_md_path.read())
-        self.CREDITS_txt_content = self.CREDITS_txt_path.read())
+        self.CREDITS_md_content = self.CREDITS_md_path.read()
+        self.CREDITS_txt_content = self.CREDITS_txt_path.read()
 
         self.title_value = self.title_inp.get()
         self.name_value = self.name_inp.get()
         self.link_value = self.link_inp.get()
 
-        self.CREDITS_md_path.write()
+        if self.CREDITS_md_content == "":
+            #print("file is empty")
+            self.CREDITS_md_path.write()
 
     def remove(self):
         pass
