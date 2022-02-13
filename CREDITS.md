@@ -11,3 +11,4 @@
 
 ## Video Sources
 [Blackthornprod (9 EASY Steps to create a multiplayer game with Unity & Photon - Tutorial)](https://www.youtube.com/watch?v=93SkbMpWCGo)  
+[Jimmy Vegas (Mini Unity Tutorial - How To Create Scrolling Credits Scene - Beginners Tutorial)](https://www.youtube.com/watch?v=cj6hwCjiVZE)
