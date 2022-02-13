@@ -40,18 +40,25 @@ class main:
             messagebox.showerror('Link entry is empty', 'The link entry is empty. Please give a link.')
             return
 
+        if addremove == "add":
+            self.add()
+        elif addremove == "remove":
+            self.remove()
+        else:
+            messagebox.showerror('Command not found', f'Command: {addremove} is not found')
+
 
     def add(self):
         self.here = sys.path[0]
-        self.CREDITS_md_path = open(os.path.join(self.here, "DUMMY_CREDITS.md")) #open(sys.path[0] + '/../CREDITS.md')
-        self.CREDITS_txt_path = open(os.path.join(self.here, "DUMMY_CREDITS.txt")) #open(sys.path[0] + '/../Virtual Learning Lab program/Assets/Scenes/Resources/CREDITS.txt')
+        self.CREDITS_md_file = open(os.path.join(self.here, "DUMMY_CREDITS.md")) #open(sys.path[0] + '/../CREDITS.md')
+        self.CREDITS_txt_file = open(os.path.join(self.here, "DUMMY_CREDITS.txt")) #open(sys.path[0] + '/../Virtual Learning Lab program/Assets/Scenes/Resources/CREDITS.txt')
 
         self.title_format = "## "
         self.name_format = "[]"
         self.link_format = "()"
 
-        self.CREDITS_md_content = self.CREDITS_md_path.read()
-        self.CREDITS_txt_content = self.CREDITS_txt_path.read()
+        self.CREDITS_md_content = self.CREDITS_md_file.read()
+        self.CREDITS_txt_content = self.CREDITS_txt_file.read()
 
         self.title_value = self.title_inp.get()
         self.name_value = self.name_inp.get()
@@ -59,7 +66,12 @@ class main:
 
         if self.CREDITS_md_content == "":
             #print("file is empty")
-            self.CREDITS_md_path.write()
+            #self.CREDITS_md_file.write()
+            pass
+
+
+        self.CREDITS_md_file.close()
+        self.CREDITS_txt_file.close()
 
     def remove(self):
         pass
