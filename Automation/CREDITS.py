@@ -30,10 +30,13 @@ class main:
         self.add_btn.grid(row=3, column=1)
 
     def check_content(self, addremove):
-        if self.title.get() == "":
+        if self.title_inp.get() == "":
             messagebox.showerror('Title entry is empty', 'The title entry is empty. Please give a title.')
             return
-        elif self.link.get() == "":
+        elif self.name_inp.get() == "":
+            messagebox.showerror('Name entry is empty', 'The name entry is empty. Please give a name.')
+            return
+        elif self.link_inp.get() == "":
             messagebox.showerror('Link entry is empty', 'The link entry is empty. Please give a link.')
             return
 
