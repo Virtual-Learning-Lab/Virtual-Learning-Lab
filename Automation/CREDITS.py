@@ -24,7 +24,7 @@ class main:
         self.link_inp = Entry(self.window)
         self.link_inp.grid(row=2, column=1)
 
-        self.remove_btn = Button(self.window, text='Remove CREDITS: ')
+        self.remove_btn = Button(self.window, text='Remove CREDITS: ', command=lambda addremove="remove": self.check_content(addremove))
         self.remove_btn.grid(row=3, column=0)
         self.add_btn = Button(self.window, text='Add CREDITS: ', command=lambda addremove="add": self.check_content(addremove))
         self.add_btn.grid(row=3, column=1)
@@ -66,8 +66,8 @@ class main:
 
         if self.CREDITS_md_content == "":
             #print("file is empty")
-            #self.CREDITS_md_file.write()
-            pass
+            self.CREDITS_md_file.write(f"{self.title_format}{self.title_value}\n")
+            self.CREDITS_md_file.write(f"{self.name_format[0]}{self.name_value}{self.name_format[1]}{self.link_format[0]}{self.link_value}{self.link_format[1]}  ")
 
 
         self.CREDITS_md_file.close()
