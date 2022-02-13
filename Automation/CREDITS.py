@@ -55,9 +55,6 @@ class main:
             self.CREDITS_md_file_read = open(os.path.join(self.here, "DUMMY_CREDITS.md"), 'r') #open(sys.path[0] + '/../CREDITS.md')
             self.CREDITS_txt_file_read = open(os.path.join(self.here, "DUMMY_CREDITS.txt"), 'r') #open(sys.path[0] + '/../Virtual Learning Lab program/Assets/Scenes/Resources/CREDITS.txt')
 
-            self.CREDITS_md_file_write = open(os.path.join(self.here, "DUMMY_CREDITS.md"), 'w') #open(sys.path[0] + '/../CREDITS.md')
-            self.CREDITS_txt_file_write = open(os.path.join(self.here, "DUMMY_CREDITS.txt"), 'w') #open(sys.path[0] + '/../Virtual Learning Lab program/Assets/Scenes/Resources/CREDITS.txt')
-
             self.title_format = "## "
             self.name_format = "[]"
             self.link_format = "()"
@@ -65,14 +62,21 @@ class main:
             self.CREDITS_md_content = self.CREDITS_md_file_read.read()
             self.CREDITS_txt_content = self.CREDITS_txt_file_read.read()
 
+            self.CREDITS_md_file_write = open(os.path.join(self.here, "DUMMY_CREDITS.md"), 'w') #open(sys.path[0] + '/../CREDITS.md')
+            self.CREDITS_txt_file_write = open(os.path.join(self.here, "DUMMY_CREDITS.txt"), 'w') #open(sys.path[0] + '/../Virtual Learning Lab program/Assets/Scenes/Resources/CREDITS.txt')
+
             self.title_value = self.title_inp.get()
             self.name_value = self.name_inp.get()
             self.link_value = self.link_inp.get()
+
+            print(self.CREDITS_md_content)
 
             if self.CREDITS_md_content == "":
                 #print("file is empty")
                 self.CREDITS_md_file_write.write(f"{self.title_format}{self.title_value}\n")
                 self.CREDITS_md_file_write.write(f"{self.name_format[0]}{self.name_value}{self.name_format[1]}{self.link_format[0]}{self.link_value}{self.link_format[1]}  ")
+            else:
+                error = True
 
 
             self.CREDITS_md_file_read.close()
@@ -87,8 +91,10 @@ class main:
             messagebox.showerror('Error', f'Error: {e}')
             errors = True
 
-        if errors = None:
-            messagebox.showmessage('Success', 'Credits added succesfully')
+        if errors == None:
+            messagebox.showinfo('Success', 'Credits added successfully')
+        else:
+            messagebox.showinfo('Error', 'Something went wrong while generating the credits.')
 
     def remove(self):
         pass
