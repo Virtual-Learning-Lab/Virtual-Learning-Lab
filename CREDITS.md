@@ -10,4 +10,4 @@
 [itsPeetah FirstPersonController](https://github.com/itsPeetah/Mobile-FPS-and-TPS-controller-for-Unity/blob/master/FirstPersonController.cs)
 
 ## Video Sources
-[Blackthornprod (9 EASY Steps to create a multiplayer game with Unity & Photon - Tutorial)](https://www.youtube.com/watch?v=93SkbMpWCGo)
+[Blackthornprod (9 EASY Steps to create a multiplayer game with Unity & Photon - Tutorial)](https://www.youtube.com/watch?v=93SkbMpWCGo)  
