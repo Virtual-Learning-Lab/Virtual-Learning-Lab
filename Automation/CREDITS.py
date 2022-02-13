@@ -82,10 +82,9 @@ class main:
                 self.CREDITS_md_file_write.write(f"{self.title_format}{self.title_value}\n")
                 self.CREDITS_md_file_write.write(f"{self.name_format[0]}{self.name_value}{self.name_format[1]}{self.link_format[0]}{self.link_value}{self.link_format[1]}  ")
             elif not self.CREDITS_md_content == "":
-                self.CREDITS_md_file_write.write(self.CREDITS_md_content)
+                self.CREDITS_md_file_write.write(f"{self.CREDITS_md_content}")
                 if self.title_value in self.CREDITS_md_content:
-                    pass
-                    #self.CREDITS_md_file_write.write(self.)
+                    self.CREDITS_md_file_write.write(f"{self.name_format[0]}{self.name_value}{self.name_format[1]}{self.link_format[0]}{self.link_value}{self.link_format[1]}")
             else:
                 error = True
 
