@@ -3,6 +3,7 @@ from tkinter import *
 from tkinter import messagebox
 import sys
 import os
+import shutil
 
 class main:
     def __init__(self, window):
@@ -52,8 +53,13 @@ class main:
         errors = None
         try:
             self.here = sys.path[0]
-            self.CREDITS_md_file_read = open(os.path.join(self.here, "DUMMY_CREDITS.md"), 'r') #open(sys.path[0] + '/../CREDITS.md')
-            self.CREDITS_txt_file_read = open(os.path.join(self.here, "DUMMY_CREDITS.txt"), 'r') #open(sys.path[0] + '/../Virtual Learning Lab program/Assets/Scenes/Resources/CREDITS.txt')
+            self.CREDITS_md_file_path = os.path.join(self.here, "DUMMY_CREDITS.md")
+            self.CREDITS_txt_file_path = os.path.join(self.here, "DUMMY_CREDITS.txt")
+            self.CREDITS_md_file_read = open(self.CREDITS_md_file_path, 'r') #open(sys.path[0] + '/../CREDITS.md')
+            self.CREDITS_txt_file_read = open(self.CREDITS_txt_file_path, 'r') #open(sys.path[0] + '/../Virtual Learning Lab program/Assets/Scenes/Resources/CREDITS.txt')
+
+            shutil.copyfile(self.CREDITS_md_file_path, os.path.join(self.here, "DUMMY_CREDITS_COPY.md"))
+            shutil.copyfile(self.CREDITS_txt_file_path, os.path.join(self.here, "DUMMY_CREDITS_COPY.txt"))
 
             self.title_format = "## "
             self.name_format = "[]"
@@ -62,8 +68,8 @@ class main:
             self.CREDITS_md_content = self.CREDITS_md_file_read.read()
             self.CREDITS_txt_content = self.CREDITS_txt_file_read.read()
 
-            self.CREDITS_md_file_write = open(os.path.join(self.here, "DUMMY_CREDITS.md"), 'w') #open(sys.path[0] + '/../CREDITS.md')
-            self.CREDITS_txt_file_write = open(os.path.join(self.here, "DUMMY_CREDITS.txt"), 'w') #open(sys.path[0] + '/../Virtual Learning Lab program/Assets/Scenes/Resources/CREDITS.txt')
+            self.CREDITS_md_file_write = open(os.path.join(self.here, "DUMMY_CREDITS_COPY.md"), 'w') #open(sys.path[0] + '/../CREDITS.md')
+            self.CREDITS_txt_file_write = open(os.path.join(self.here, "DUMMY_CREDITS_COPY.txt"), 'w') #open(sys.path[0] + '/../Virtual Learning Lab program/Assets/Scenes/Resources/CREDITS.txt')
 
             self.title_value = self.title_inp.get()
             self.name_value = self.name_inp.get()
