@@ -37,8 +37,8 @@ class main:
         self.name_format = "[]"
         self.link_format = "()"
 
-        print(self.CREDITS_md_path.read())
-        print(self.CREDITS_txt_path.read())
+        self.CREDITS_md_content = self.CREDITS_md_path.read())
+        self.CREDITS_txt_content = self.CREDITS_txt_path.read())
 
         self.title_value = self.title_inp.get()
         self.name_value = self.name_inp.get()
