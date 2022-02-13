@@ -83,6 +83,9 @@ class main:
                 self.CREDITS_md_file_write.write(f"{self.name_format[0]}{self.name_value}{self.name_format[1]}{self.link_format[0]}{self.link_value}{self.link_format[1]}  ")
             elif not self.CREDITS_md_content == "":
                 self.CREDITS_md_file_write.write(self.CREDITS_md_content)
+                if self.title_value in self.CREDITS_md_content:
+                    pass
+                    #self.CREDITS_md_file_write.write(self.)
             else:
                 error = True
 
@@ -99,8 +102,10 @@ class main:
             messagebox.showerror('Error', f'Error: {e}')
             errors = True
 
-        os.remove(os.path.join(self.here, "DUMMY_CREDITS_COPY.md"))
-        os.remove(os.path.join(self.here, "DUMMY_CREDITS_COPY.txt"))
+        os.remove(os.path.join(self.here, "DUMMY_CREDITS.md"))
+        os.remove(os.path.join(self.here, "DUMMY_CREDITS.txt"))
+        os.rename(os.path.join(self.here, "DUMMY_CREDITS_COPY.md"), os.path.join(self.here, "DUMMY_CREDITS.md"))
+        os.rename(os.path.join(self.here, "DUMMY_CREDITS_COPY.txt"), os.path.join(self.here, "DUMMY_CREDITS.txt"))
 
         if errors == None:
             messagebox.showinfo('Success', 'Credits added successfully')
