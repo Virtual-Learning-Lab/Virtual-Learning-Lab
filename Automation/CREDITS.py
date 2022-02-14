@@ -91,9 +91,11 @@ class main:
                 self.CREDITS_md_file_write.write(f"{self.CREDITS_md_content}")
                 if self.title_value in self.CREDITS_md_content:
                     self.CREDITS_md_file_write.write(f"{self.name_format[0]}{self.name_value}{self.name_format[1]}{self.link_format[0]}{self.link_value}{self.link_format[1]}")
+                else:
+                    self.CREDITS_md_file_write.write(f"\n\n{self.title_format}{self.title_value}\n")
+                    self.CREDITS_md_file_write.write(f"{self.name_format[0]}{self.name_value}{self.name_format[1]}{self.link_format[0]}{self.link_value}{self.link_format[1]}")
             else:
                 error = True
-
 
             self.CREDITS_md_file_read.close()
             self.CREDITS_txt_file_read.close()
