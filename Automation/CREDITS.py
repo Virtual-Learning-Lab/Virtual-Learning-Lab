@@ -5,7 +5,7 @@ CREDITS.py will allow you to create CREDITS both in CREDITS.md in the main folde
 Features to add:
     - Able to insert line (not just at the end of the file)
     - Check if there is already a credit for that person within that title
-
+    - Also update CREDITS.html on the website
 """
 
 
