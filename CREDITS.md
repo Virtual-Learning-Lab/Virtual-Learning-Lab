@@ -5,7 +5,7 @@
 [Kevin Giesberts](https://github.com/KevinGiesberts)
 
 ## Logo design
-[littlemoree](https://www.reddit.com/user/littlemoree)
+[littlemoree](https://www.littlemorecreations.com)
 
 ## Packages/Libaries
 [Photon](https://www.photonengine.com/pun)  
