@@ -1,6 +1,11 @@
 """
 What will CREDITS.py do once it is finished?
 CREDITS.py will allow you to create CREDITS both in CREDITS.md in the main folder and in CREDITS.txt in the recourses folder in the Unity project.
+
+Features to add:
+    - Able to insert line (not just at the end of the file)
+    - Check if there is already a credit for that person within that title
+
 """
 
 
@@ -93,12 +98,14 @@ class main:
             elif not self.CREDITS_md_content == "":
                 self.CREDITS_md_file_write.write(f"{self.CREDITS_md_content}")
                 if self.title_value in self.CREDITS_md_content:
-                    for i in self.CREDITS_md_file_lines:
+                    for i in self.CREDITS_md_lines:
                         initiate_search = False
                         if i == self.title_value:
                             initiate_search = True
-                        if i == "" and initiate_search:
-                            self.CREDITS_md_file_write.write(f"{self.name_format[0]}{self.name_value}{self.name_format[1]}{self.link_format[0]}{self.link_value}{self.link_format[1]}  \n")
+                        print(i)
+                        if i == "" or i == " " or i == " ":
+                            if initiate_search:
+                                self.CREDITS_md_file_write.write(f"{self.name_format[0]}{self.name_value}{self.name_format[1]}{self.link_format[0]}{self.link_value}{self.link_format[1]}  \n")
                 else:
                     self.CREDITS_md_file_write.write(f"\n\n{self.title_format}{self.title_value}\n")
                     self.CREDITS_md_file_write.write(f"{self.name_format[0]}{self.name_value}{self.name_format[1]}{self.link_format[0]}{self.link_value}{self.link_format[1]}")
