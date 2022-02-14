@@ -1,3 +1,9 @@
+"""
+What will CREDITS.py do once it is finished?
+CREDITS.py will allow you to create CREDITS both in CREDITS.md in the main folder and in CREDITS.txt in the recourses folder in the Unity project.
+"""
+
+
 import tkinter
 from tkinter import *
 from tkinter import messagebox
