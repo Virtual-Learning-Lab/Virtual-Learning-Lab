@@ -79,8 +79,11 @@ class main:
             self.CREDITS_md_content = self.CREDITS_md_file_read.read()
             self.CREDITS_txt_content = self.CREDITS_txt_file_read.read()
 
-            self.CREDITS_md_lines = self.CREDITS_md_file_read.readlines()
-            self.CREDITS_txt_lines = self.CREDITS_txt_file_read.readlines()
+            with open(self.CREDITS_md_file_path, 'r') as f_md:
+                self.CREDITS_md_lines = f_md.readlines()
+
+            with open(self.CREDITS_txt_file_path, 'r') as f_txt:
+                self.CREDITS_txt_lines = f_txt.readlines()
 
             self.CREDITS_md_file_write = open(os.path.join(self.here, "DUMMY_CREDITS_COPY.md"), 'w') #open(sys.path[0] + '/../CREDITS.md')
             self.CREDITS_txt_file_write = open(os.path.join(self.here, "DUMMY_CREDITS_COPY.txt"), 'w') #open(sys.path[0] + '/../Virtual Learning Lab program/Assets/Scenes/Resources/CREDITS.txt')
@@ -98,12 +101,14 @@ class main:
             elif not self.CREDITS_md_content == "":
                 self.CREDITS_md_file_write.write(f"{self.CREDITS_md_content}")
                 if self.title_value in self.CREDITS_md_content:
+                    print(1)
+                    print(self.CREDITS_md_lines)
                     for i in self.CREDITS_md_lines:
                         initiate_search = False
                         if i == self.title_value:
                             initiate_search = True
                         print(i)
-                        if i == "" or i == " " or i == " ":
+                        if i == "" or i == " " or i == " " or i == "\n":
                             if initiate_search:
                                 self.CREDITS_md_file_write.write(f"{self.name_format[0]}{self.name_value}{self.name_format[1]}{self.link_format[0]}{self.link_value}{self.link_format[1]}  \n")
                 else:
