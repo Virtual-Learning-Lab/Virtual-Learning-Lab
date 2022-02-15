@@ -1,3 +1,5 @@
+//Get all CREDITS information from CREDTIS.html which is a page on the official Virtual Learning lab website
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
