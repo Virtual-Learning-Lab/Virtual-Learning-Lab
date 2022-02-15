@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Net.Http;
 using UnityEngine.UI;
 
 public class AddCreddits : MonoBehaviour
@@ -15,6 +16,9 @@ public class AddCreddits : MonoBehaviour
     void Start()
     {
         //Get all CREDITS information from CREDTIS.html which is a page on the official Virtual Learning lab website
-        var url = "https://virtual-learninglab.github.io/CREDITS.html"        
+        var url = "https://virtual-learninglab.github.io/CREDITS.html";
+        
+        var httpClient = new HttpClient();
+        var html = httpClient.GetStringAsync(url);
     }
 }
