@@ -9,11 +9,11 @@ C:\Program Files\Unity\Hub\Editor\2021.2.10f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker1
+AssetImportWorker3
 -projectPath
 C:/Users/Giesberts/Documents/GitHub/Virtual-Learning-Lab/Virtual Learning Lab program
 -logFile
-Logs/AssetImportWorker1.log
+Logs/AssetImportWorker3.log
 -srvPort
 62169
 Successfully changed project path to: C:/Users/Giesberts/Documents/GitHub/Virtual-Learning-Lab/Virtual Learning Lab program
@@ -47,7 +47,7 @@ C:/Users/Giesberts/Documents/GitHub/Virtual-Learning-Lab/Virtual Learning Lab pr
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 99.44 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 97.03 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.10f1 (ee872746220e)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.10f1/Editor/Data/Resources/UnitySubsystems
@@ -63,89 +63,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56636
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56888
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.011451 seconds.
+Registered in 0.012132 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 116.38 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 96.29 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.733 seconds
+- Completed reload, in  0.786 seconds
 Domain Reload Profiling:
-	ReloadAssembly (733ms)
-		BeginReloadAssembly (89ms)
+	ReloadAssembly (787ms)
+		BeginReloadAssembly (94ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (547ms)
-			LoadAssemblies (85ms)
+		EndReloadAssembly (563ms)
+			LoadAssemblies (90ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (111ms)
+			SetupTypeCache (122ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (337ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (331ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
+				InitializePlatformSupportModulesInManaged (19ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (117ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (146ms)
-				ProcessInitializeOnLoadMethodAttributes (53ms)
+				RefreshPlugins (96ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (166ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.016416 seconds.
+Registered in 0.030620 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Giesberts\Documents\GitHub\Virtual-Learning-Lab\Virtual Learning Lab program\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Giesberts\Documents\GitHub\Virtual-Learning-Lab\Virtual Learning Lab program\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.197 seconds
+- Completed reload, in  1.301 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1198ms)
-		BeginReloadAssembly (145ms)
+	ReloadAssembly (1302ms)
+		BeginReloadAssembly (140ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (941ms)
-			LoadAssemblies (102ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (1055ms)
+			LoadAssemblies (104ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (292ms)
+			SetupTypeCache (384ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (70ms)
-			SetupLoadedEditorAssemblies (422ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (467ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (14ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (111ms)
-				ProcessInitializeOnLoadAttributes (259ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
-				AfterProcessingInitializeOnLoad (12ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (292ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
+				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.35 seconds
-Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.22 seconds
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3459 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 32 unused Assets / (112.6 KB). Loaded Objects now: 3924.
 Memory consumption went from 135.2 MB to 135.1 MB.
-Total: 5.656000 ms (FindLiveObjects: 0.432900 ms CreateObjectMapping: 0.234900 ms MarkObjects: 4.819900 ms  DeleteObjects: 0.166900 ms)
+Total: 8.250500 ms (FindLiveObjects: 0.565100 ms CreateObjectMapping: 0.373100 ms MarkObjects: 7.094100 ms  DeleteObjects: 0.216600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -157,40 +157,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 455417.077907 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Icons/PunIconApp128.png
-  artifactKey: Guid(f00feafcf0675cd47a48f83ae42b06d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Icons/PunIconApp128.png using Guid(f00feafcf0675cd47a48f83ae42b06d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13b556dbadc46d50b1aca8dfa685e6ae') in 0.341855 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 66.343036 seconds.
-  path: Assets/Logo/Logo V0 1.jpeg
-  artifactKey: Guid(0710235be0bb5874fa85d4a45b9eb384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Logo/Logo V0 1.jpeg using Guid(0710235be0bb5874fa85d4a45b9eb384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f485174b727948445bf6b3d3a49182d5') in 0.145806 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.773870 seconds.
-  path: Assets/Logo/Logo V0 1.jpeg
-  artifactKey: Guid(0710235be0bb5874fa85d4a45b9eb384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Logo/Logo V0 1.jpeg using Guid(0710235be0bb5874fa85d4a45b9eb384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d4ee8e68c08b5de690754d5e8ba9044') in 0.308027 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 524.825036 seconds.
-  path: Assets/Splash Screen/Splash_Screen_Reinvent_the_way_we_learn.png
-  artifactKey: Guid(54fea410bf1303840bcf25758a2edaf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Splash Screen/Splash_Screen_Reinvent_the_way_we_learn.png using Guid(54fea410bf1303840bcf25758a2edaf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.091575 seconds  code(4) message(Build asset version error: assets/splash screen/splash_screen_reinvent_the_way_we_learn.png in SourceAssetDB has modification time of '2022-02-15T19:54:45.6515387Z' while content on disk has modification time of '2022-02-15T19:55:37.5472761Z')
-  ERROR: Build asset version error: assets/splash screen/splash_screen_reinvent_the_way_we_learn.png in SourceAssetDB has modification time of '2022-02-15T19:54:45.6515387Z' while content on disk has modification time of '2022-02-15T19:55:37.5472761Z'
-========================================================================
-Received Import Request.
-  Time since last request: 23.716807 seconds.
-  path: Assets/Splash Screen/Splash_Screen_Reinvent_the_way_we_learn.png
-  artifactKey: Guid(54fea410bf1303840bcf25758a2edaf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Splash Screen/Splash_Screen_Reinvent_the_way_we_learn.png using Guid(54fea410bf1303840bcf25758a2edaf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af90d240c658c40452924eee81ae207e') in 0.124752 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 68.422391 seconds.
-  path: Assets/Logo/Logo V0 1.jpeg
-  artifactKey: Guid(0710235be0bb5874fa85d4a45b9eb384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Logo/Logo V0 1.jpeg using Guid(0710235be0bb5874fa85d4a45b9eb384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1b5da6b503eda479d36388c8c16f7bb') in 0.205349 seconds 
