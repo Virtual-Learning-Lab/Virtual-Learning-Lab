@@ -1,12 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Net.Http;
+using UnityEngine;
 using UnityEngine.UI;
+
 
 public class AddCreddits : MonoBehaviour
 {
@@ -20,5 +22,7 @@ public class AddCreddits : MonoBehaviour
         
         var httpClient = new HttpClient();
         var html = httpClient.GetStringAsync(url);
+
+        Debug.Log(html.Result);
     }
 }
