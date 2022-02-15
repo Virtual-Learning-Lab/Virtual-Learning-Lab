@@ -22,7 +22,8 @@ public class AddCreddits : MonoBehaviour
         
         var httpClient = new HttpClient();
         var html = httpClient.GetStringAsync(url);
+        string html_results = html.Result.Replace("<!DOCTYPE html>");
 
-        Debug.Log(html.Result);
+        Debug.Log(html_results);
     }
 }
