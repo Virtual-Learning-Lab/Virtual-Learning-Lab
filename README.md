@@ -20,6 +20,7 @@ We can use all the help to build this game. So if you want to help us create thi
   - [Discord server](https://discord.gg/s3mCmxecZR)
   - [Reddit](https://www.reddit.com/user/StephenF369)
   - [SubReddit](https://www.reddit.com/r/VirtualLearningLab/)
+  - [Twitter]('https://twitter.com/Virt_Learn_Lab')
 
 ## License
 This project is licensed under [European Union Public License 1.2](https://github.com/KevinGiesberts/Virtual-Learning-Lab/blob/main/LICENSE)
