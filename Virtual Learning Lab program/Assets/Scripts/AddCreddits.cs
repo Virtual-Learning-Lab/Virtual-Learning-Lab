@@ -8,12 +8,15 @@ using System.Threading.Tasks;
 using System.Net.Http;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 
 public class AddCreddits : MonoBehaviour
 {
-    public Transform contentWindow;
-    public GameObject recallTextObject;
+    //public Transform contentWindow;
+    //public GameObject recallTextObject;
+    [SerializeField]
+    private TMP_Text _credits;
 
     void Start()
     {
@@ -38,5 +41,7 @@ public class AddCreddits : MonoBehaviour
         string html_results = html.Result.Replace("<!DOCTYPE html>", "").Replace("<html>", "").Replace("</html>", "").Replace("Credits", "").Replace("<title>", "").Replace("</title>", "").Replace("<head>", "").Replace("</head>", "").Replace("<h1>", "").Replace("</h1>", "").Replace("<h2>", "").Replace("</h2>", "").Replace("<h3>", "").Replace("</h3>", "").Replace("<body>", "").Replace("</body>", "").Replace("!p!", "\n");
 
         Debug.Log(html_results);
+
+        _credits.text = html_results;
     }
 }
