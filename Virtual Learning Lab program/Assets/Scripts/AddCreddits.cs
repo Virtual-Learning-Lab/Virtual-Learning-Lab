@@ -21,6 +21,8 @@ public class AddCreddits : MonoBehaviour
     //public GameObject recallTextObject;
     [SerializeField]
     private TMP_Text _credits;
+    public GameObject credits_position;
+    public int credits_num_lines;
 
     void Start()
     {
@@ -39,11 +41,19 @@ public class AddCreddits : MonoBehaviour
         Debug.Log(credits_results);
 
         _credits.text = credits_results;
+        credits_num_lines = credits_results.Split('\n').Length;
+    }
 
+    void Update()
+    {
         //For 14 lines of credits (including blanks) we have a y transform from -250 to 600 or a delta y of 400
         //For a delta y of 400 we use 1000 frames of animation
         //So per line we need a transformation of 28.5714285714 and 2.5 frames
-        float frames_per_line = 2.5F;
+        //float frames_per_transform = 2.5F;
         float transform_per_line = 28.5714285714F;
+        float start_pos = -250;
+        float end_pos = credits_num_lines * transform_per_line;
+
+        credits_position.transform.position = new Vector3(50, )
     }
 }
