@@ -39,9 +39,10 @@ public class AddCreddits : MonoBehaviour
 
         //Removing all the html code
         string html_results = html.Result.Replace("<!DOCTYPE html>", "").Replace("<html>", "").Replace("</html>", "").Replace("Credits", "").Replace("<title>", "").Replace("</title>", "").Replace("<head>", "").Replace("</head>", "").Replace("<h1>", "").Replace("</h1>", "").Replace("<h2>", "").Replace("</h2>", "").Replace("<h3>", "").Replace("</h3>", "").Replace("<body>", "").Replace("</body>", "").Replace("!p!", "\n");
+        string credits_results = html_results.Replace("\n", "");
 
-        Debug.Log(html_results);
+        Debug.Log(credits_results);
 
-        _credits.text = html_results;
+        _credits.text = credits_results;
     }
 }
