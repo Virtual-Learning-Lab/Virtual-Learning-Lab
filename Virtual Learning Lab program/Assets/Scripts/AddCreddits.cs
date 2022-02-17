@@ -22,19 +22,9 @@ public class AddCreddits : MonoBehaviour
     void Start()
     {
         //Get all CREDITS information from CREDTIS.html which is a page on the official Virtual Learning lab website
-        /*<!DOCTYPE html>
-        <html>
-        <head>
-        <title>Credits</title>
-        </head>
-        <body>
-            <h1>Credits</h1>
-            <h2>Founder</h2>
-            <h3>Stephen van Erkelens</h3>
-        </body>*/
 
         var url = "https://virtual-learninglab.github.io/CREDITS.html";
-        
+
         var httpClient = new HttpClient();
         var html = httpClient.GetStringAsync(url);
 
@@ -46,5 +36,11 @@ public class AddCreddits : MonoBehaviour
         Debug.Log(credits_results);
 
         _credits.text = credits_results;
+
+        //For 14 lines of credits (including blanks) we have a y transform from -250 to 600 or a delta y of 400
+        //For a delta y of 400 we use 1000 frames of animation
+        //So per line we need a transformation of 28.5714285714 and 2.5 frames
+        float frames_per_line = 2.5F;
+        float transform_per_line = 28.5714285714F;
     }
 }

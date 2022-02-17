@@ -791,8 +791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa69b406a5ec08d42b98023b7113ce0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contentWindow: {fileID: 0}
-  recallTextObject: {fileID: 0}
+  _credits: {fileID: 1841636756}
 --- !u!4 &1724774774
 Transform:
   m_ObjectHideFlags: 0
@@ -867,7 +866,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Founder:\nStephen van Erkelens\r\n\r\nDevelopers:\nKevin Giesberts\r\n\r\nPackages/Libaries:\nPhoton 
+  m_text: "Founder:\nKevin Giesberts\n\r\nDevelopers:\nKevin Giesberts\r\n\r\nPackages/Libaries:\nPhoton 
     \r\nTextMeshPro \r\nitsPeetah FirstPersonController\r\n\r\nVideo Sources:\nBlackthornprod\nJimmy
     Vegas"
   m_isRightToLeft: 0
