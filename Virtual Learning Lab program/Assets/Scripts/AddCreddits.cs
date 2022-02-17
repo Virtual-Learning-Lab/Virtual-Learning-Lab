@@ -12,6 +12,9 @@ using UnityEngine.UI;
 using TMPro;
 
 
+//original animation: frame 0, position y-250; frame 1000, position y650
+
+
 public class AddCreddits : MonoBehaviour
 {
     //public Transform contentWindow;
@@ -42,11 +45,5 @@ public class AddCreddits : MonoBehaviour
         //So per line we need a transformation of 28.5714285714 and 2.5 frames
         float frames_per_line = 2.5F;
         float transform_per_line = 28.5714285714F;
-        animate_text();
-
-        void animate_text()
-        {
-            _credits.rectTransform(1,1,1);
-        }
     }
 }
