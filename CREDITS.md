@@ -1,11 +1,14 @@
 ## Founder
-[Stephen van Erkelens](https://github.com/StephenF369)  
+[Kevin Giesberts](https://github.com/KevinGiesberts)  
 
 ## Developers
 [Kevin Giesberts](https://github.com/KevinGiesberts)  
 
 ## Logo design
 [littlemoree](https://www.littlemorecreations.com)  
+
+## Social Media
+[Stephen van Erkelens](https://github.com/StephenF369)  
 
 ## Packages/Libaries
 [Photon](https://www.photonengine.com/pun)  
