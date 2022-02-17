@@ -57,10 +57,11 @@ public class AddCreddits : MonoBehaviour
         //So per line we need a transformation of 28.5714285714 and 2.5 frames
         frames_per_transform = 2.5F;
         transform_per_line = 28.5714285714F;
-        start_pos = -250;
+        start_pos = 200;
         end_pos = credits_num_lines * transform_per_line;
-        iterations = ((start_pos*-1 + end_pos) + (frames_per_transform * transform_per_line))*10;
-        y_update = ((start_pos*-1 + end_pos) / iterations)/4;
+        float iterations_y_update = ((start_pos + end_pos) + (frames_per_transform * transform_per_line))*6;
+        y_update = ((start_pos + end_pos) / iterations_y_update)-0.01F;
+        iterations = ((start_pos + end_pos) + (frames_per_transform * transform_per_line))*16;
         current_pos = start_pos;
         Debug.Log(iterations);
         //Debug.Log(y_update);
