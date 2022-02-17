@@ -59,9 +59,11 @@ public class AddCreddits : MonoBehaviour
         transform_per_line = 28.5714285714F;
         start_pos = -250;
         end_pos = credits_num_lines * transform_per_line;
-        iterations = (start_pos + end_pos) / frames_per_transform;
-        y_update = (start_pos + end_pos) / iterations;
+        iterations = ((start_pos*-1 + end_pos) + (frames_per_transform * transform_per_line))*10;
+        y_update = ((start_pos*-1 + end_pos) / iterations)/4;
         current_pos = start_pos;
+        Debug.Log(iterations);
+        //Debug.Log(y_update);
     }
 
     void Update()
@@ -69,6 +71,7 @@ public class AddCreddits : MonoBehaviour
         if (iterations_had >= iterations)
         {
             current_pos = start_pos;
+            iterations_had = 0;
         }
         credits_position.transform.position = new Vector3(50, current_pos, 0);
         current_pos += y_update;
