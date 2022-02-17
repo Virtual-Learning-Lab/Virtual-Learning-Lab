@@ -279,3 +279,21 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 756.541054 seconds.
+  path: Assets/Scenes/Resources/Creddit Text.prefab
+  artifactKey: Guid(e0bc4a07f45ac1649967d8305d1d45c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Resources/Creddit Text.prefab using Guid(e0bc4a07f45ac1649967d8305d1d45c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7380736d01cd403c680f24fe4f72cbef') in 0.084036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.336155 seconds.
+  path: Assets/Scenes/Resources/Player 1.prefab
+  artifactKey: Guid(ed1e9f7b6960b2c4785f94d9bb30edbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Resources/Player 1.prefab using Guid(ed1e9f7b6960b2c4785f94d9bb30edbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '806707090f27a74383e4e0b30d654e35') in 0.008768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.735461 seconds.
+  path: Assets/Scenes/Resources/Player VR.prefab
+  artifactKey: Guid(ed1e9f7b6960b2c4785f94d9bb30edbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Resources/Player VR.prefab using Guid(ed1e9f7b6960b2c4785f94d9bb30edbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efa9ba383fb6d6b7301154b308259eea') in 0.007197 seconds 
