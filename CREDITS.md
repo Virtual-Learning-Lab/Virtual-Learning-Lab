@@ -22,6 +22,7 @@
 
 ## Written Sources
 [Ivan Taranov (Stackoverflow)](https://stackoverflow.com/a/67425747)
+[Viorel-1 (Microsoft forum)](https://docs.microsoft.com/en-us/answers/questions/183021/c-remove-all-new-line-and-blank-line.html)
 
 ## Tools
 [Banner maker](https://banner.godori.dev/)  
