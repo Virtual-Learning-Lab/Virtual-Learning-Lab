@@ -49,7 +49,8 @@ public class AddCreddits : MonoBehaviour
         Debug.Log(credits_results);
 
         _credits.text = credits_results;
-        credits_num_lines = credits_results.Split('\n').Length;
+        credits_num_lines = credits_results.Split('\n').Length-1;
+        Debug.Log(credits_num_lines);
 
         //For 14 lines of credits (including blanks) we have a y transform from -250 to 600 or a delta y of 400
         //For a delta y of 400 we use 1000 frames of animation
