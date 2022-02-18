@@ -7,16 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//using Microsoft.DirectX;
-//using Microsoft.DirectX.Direct3D;
 
 namespace Virtual_Learning_Lab_Editor
 {
-    public partial class Main : Form
+    public partial class CreateMap : Form
     {
-        public Main()
+        public CreateMap()
         {
-            InitializeComponent();
+            Form createmap = new Form();
+            Button creditsbutton = new Button();
         }
     }
 }
