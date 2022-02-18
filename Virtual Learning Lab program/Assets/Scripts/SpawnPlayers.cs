@@ -12,7 +12,7 @@ public class SpawnPlayers : MonoBehaviour
     public float maxX;
     public float minY;
     public float maxY;
-    public string settings_file;
+    public GameObject settings_file;
 
     void Start()
     {
@@ -21,10 +21,12 @@ public class SpawnPlayers : MonoBehaviour
         Vector2 randomPosition = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
         if (VR == true)
         {
+            Debug.Log("Inserting a VR player");
             PhotonNetwork.Instantiate(playerPrefab_VR.name, randomPosition, Quaternion.identity);
         }
         else
         {
+            Debug.Log("Inserting a None VR player");
             PhotonNetwork.Instantiate(playerPrefab_nonVR.name, randomPosition, Quaternion.identity);
         }
     }
