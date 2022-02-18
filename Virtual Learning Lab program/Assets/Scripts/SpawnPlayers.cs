@@ -16,7 +16,7 @@ public class SpawnPlayers : MonoBehaviour
 
     void Start()
     {
-        bool VR = false;
+        bool VR = true;
 
         Vector2 randomPosition = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
         if (VR == true)
