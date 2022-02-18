@@ -19,6 +19,7 @@
 [Blackthornprod (9 EASY Steps to create a multiplayer game with Unity & Photon - Tutorial)](https://www.youtube.com/watch?v=93SkbMpWCGo)  
 [Jimmy Vegas (Mini Unity Tutorial - How To Create Scrolling Credits Scene - Beginners Tutorial)](https://www.youtube.com/watch?v=cj6hwCjiVZE)  
 [BigOrton (Custom SPLASH SCREEN in Unity 2020! (Splash Screen Tutorial))](https://www.youtube.com/watch?v=ggAtvdi23gc)  
+[Cold Flame Studios (Unity Android Google Cardboard Configuration)](https://www.youtube.com/watch?v=we-sgSmy5p0)
 
 ## Written Sources
 [Ivan Taranov (Stackoverflow)](https://stackoverflow.com/a/67425747)
