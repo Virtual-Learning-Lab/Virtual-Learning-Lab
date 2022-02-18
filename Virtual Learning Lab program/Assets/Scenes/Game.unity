@@ -246,11 +246,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e99ccb421ca16ca4282bb32662d79e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 6054225551339913124, guid: 9f6a26c169f762343b5517fb0118326d, type: 3}
+  playerPrefab_VR: {fileID: 6803298564976159955, guid: 16bb785b004ca404eb20b120dbbf75d8, type: 3}
+  playerPrefab_nonVR: {fileID: 6054225551339913124, guid: 9f6a26c169f762343b5517fb0118326d, type: 3}
   minX: -450
   maxX: 450
   minY: 33
   maxY: 33
+  settings_file: 
 --- !u!4 &510604945
 Transform:
   m_ObjectHideFlags: 0
