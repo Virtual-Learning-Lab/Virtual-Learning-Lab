@@ -8,7 +8,7 @@ Virtual Learning Lab is an open-source virtual reality game designed to mimic ph
 Virtual Learning Lab allows students to learn together no matter where they are. Not only that, but Virtual Learning Lab also allows students to learn in ways they never could before. This includes going back to medieval times and being there as they invade a castle.
 
 ## How can you help?
-1. Take a look at the issues section of this repository and choose an issue you'd like to work on.
+1. Take a look at the issues section or the projects section of this repository and choose an issue you'd like to work on.
 2. Let everybody know that you are going to work on that issue by commenting on that issue.
 3. Create a new branch with an appropriate name.
 4. Start coding.
