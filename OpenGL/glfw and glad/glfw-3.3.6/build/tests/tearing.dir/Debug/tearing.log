@@ -1,0 +1,5 @@
+﻿  Building Custom Rule E:/GitHub/Virtual-Learning-Lab/OpenGL/glfw and glad/glfw-3.3.6/glfw-3.3.6/tests/CMakeLists.txt
+  tearing.c
+  glad_gl.c
+  Generating Code...
+  tearing.vcxproj -> E:\GitHub\Virtual-Learning-Lab\OpenGL\glfw and glad\glfw-3.3.6\glfw-3.3.6\build\tests\Debug\tearing.exe

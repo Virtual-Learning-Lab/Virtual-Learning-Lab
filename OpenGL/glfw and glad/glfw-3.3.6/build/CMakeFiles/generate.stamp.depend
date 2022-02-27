@@ -1,0 +1,36 @@
+# CMake generation dependency list for this directory.
+E:/GitHub/Virtual-Learning-Lab/OpenGL/glfw and glad/glfw-3.3.6/glfw-3.3.6/CMakeLists.txt
+E:/GitHub/Virtual-Learning-Lab/OpenGL/glfw and glad/glfw-3.3.6/glfw-3.3.6/build/CMakeFiles/3.23.0-rc1/CMakeCCompiler.cmake
+E:/GitHub/Virtual-Learning-Lab/OpenGL/glfw and glad/glfw-3.3.6/glfw-3.3.6/build/CMakeFiles/3.23.0-rc1/CMakeRCCompiler.cmake
+E:/GitHub/Virtual-Learning-Lab/OpenGL/glfw and glad/glfw-3.3.6/glfw-3.3.6/build/CMakeFiles/3.23.0-rc1/CMakeSystem.cmake
+E:/GitHub/Virtual-Learning-Lab/OpenGL/glfw and glad/glfw-3.3.6/glfw-3.3.6/cmake_uninstall.cmake.in
+E:/GitHub/Virtual-Learning-Lab/OpenGL/glfw and glad/glfw-3.3.6/glfw-3.3.6/src/glfw3.pc.in
+E:/GitHub/Virtual-Learning-Lab/OpenGL/glfw and glad/glfw-3.3.6/glfw-3.3.6/src/glfw3Config.cmake.in
+E:/GitHub/Virtual-Learning-Lab/OpenGL/glfw and glad/glfw-3.3.6/glfw-3.3.6/src/glfw_config.h.in
+E:/Installs/cmake/share/cmake-3.23/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+E:/Installs/cmake/share/cmake-3.23/Modules/CMakeCInformation.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/CMakeDependentOption.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/CMakeGenericSystem.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/CMakeRCInformation.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/CheckIncludeFile.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/CheckLibraryExists.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/Compiler/MSVC-C.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/FindDoxygen.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/FindPackageMessage.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/FindThreads.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/GNUInstallDirs.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/Platform/Windows-MSVC-C.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/Platform/Windows-MSVC.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/Platform/Windows.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake
+E:/Installs/cmake/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake
