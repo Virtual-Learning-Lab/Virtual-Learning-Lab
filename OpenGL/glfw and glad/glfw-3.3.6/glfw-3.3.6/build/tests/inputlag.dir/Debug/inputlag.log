@@ -1,0 +1,6 @@
+﻿  Building Custom Rule E:/GitHub/Virtual-Learning-Lab/OpenGL/glfw and glad/glfw-3.3.6/glfw-3.3.6/tests/CMakeLists.txt
+  inputlag.c
+  getopt.c
+  glad_gl.c
+  Generating Code...
+  inputlag.vcxproj -> E:\GitHub\Virtual-Learning-Lab\OpenGL\glfw and glad\glfw-3.3.6\glfw-3.3.6\build\tests\Debug\inputlag.exe

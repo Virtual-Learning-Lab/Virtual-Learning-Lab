@@ -1,0 +1,10 @@
+^E:\GITHUB\VIRTUAL-LEARNING-LAB\OPENGL\GLFW AND GLAD\GLFW-3.3.6\GLFW-3.3.6\CMAKELISTS.TXT
+setlocal
+E:\Installs\cmake\bin\cmake.exe "-SE:/GitHub/Virtual-Learning-Lab/OpenGL/glfw and glad/glfw-3.3.6/glfw-3.3.6" "-BE:/GitHub/Virtual-Learning-Lab/OpenGL/glfw and glad/glfw-3.3.6/glfw-3.3.6/build" --check-stamp-file "E:/GitHub/Virtual-Learning-Lab/OpenGL/glfw and glad/glfw-3.3.6/glfw-3.3.6/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

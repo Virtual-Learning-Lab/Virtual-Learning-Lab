@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\GitHub\Virtual-Learning-Lab\OpenGL\glfw and glad\glfw-3.3.6\glfw-3.3.6\build\CMakeFiles\bfc8699b1d7b88930746eb0d1da54900\docs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GitHub\Virtual-Learning-Lab\OpenGL\glfw and glad\glfw-3.3.6\glfw-3.3.6\docs\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\GitHub\Virtual-Learning-Lab\OpenGL\glfw and glad\glfw-3.3.6\glfw-3.3.6\build\docs\CMakeFiles\docs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{60E4A169-CA4C-39C8-9FCF-D4DAA60539B3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
