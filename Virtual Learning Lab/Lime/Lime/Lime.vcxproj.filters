@@ -40,9 +40,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Library Include="libaries\lib\GLFW\glfw3.lib" />
+    <None Include="libaries\lib\GLFW\glfw3.pdb" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="libaries\lib\GLFW\glfw3.pdb" />
+    <Library Include="libaries\lib\GLFW\glfw3.lib" />
   </ItemGroup>
 </Project>
