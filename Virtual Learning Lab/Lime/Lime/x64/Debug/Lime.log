@@ -1,2 +1,1 @@
-﻿  Main.cpp
-LINK : fatal error LNK1104: cannot open file 'GLFW.obj'
+﻿LINK : fatal error LNK1104: cannot open file 'GLFW.obj'
