@@ -7,9 +7,6 @@
 ## Logo design
 [littlemoree](https://www.littlemorecreations.com)  
 
-## Social Media
-[Stephen van Erkelens](https://github.com/StephenF369)  
-
 ## Packages/Libaries
 [Photon](https://www.photonengine.com/pun)  
 [TextMeshPro](https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/manual/index.html)  
