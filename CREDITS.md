@@ -1,8 +1,8 @@
 ## Founder
-[Kevin Giesberts](https://github.com/KevinGiesberts)  
+[Cerabbite](https://github.com/KevinGiesberts)  
 
 ## Developers
-[Kevin Giesberts](https://github.com/KevinGiesberts)  
+[KCerabbite](https://github.com/KevinGiesberts)  
 
 ## Logo design
 [littlemoree](https://www.littlemorecreations.com)  
