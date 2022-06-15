@@ -17,7 +17,7 @@ Virtual Learning Lab allows students to learn together no matter where they are.
 We will review all pull requests to make sure the code in the pull requests are good and have good informative comments.
 
 ## Need help?
-You can contact Stephen van Erkelens on [Reddit](https://www.reddit.com/user/StephenF369) or [Discord](https://discordapp.com/users/934811008063651931) if you ever need extra help. He will give you get the help you need.
+You can contact Cerabbite on [Reddit](https://www.reddit.com/user/StephenF369) or [Discord](https://discordapp.com/users/934811008063651931) if you ever need extra help. He will give you get the help you need.
 ## How can you help?
 We can use all the help to build this game. So if you want to help us create this game and improve online school then take a look at the [issues](https://github.com/KevinGiesberts/Virtual-Learning-Lab/issues) and [milestones](https://github.com/KevinGiesberts/Virtual-Learning-Lab/milestones), contact [StephenF369](https://www.reddit.com/user/StephenF369), or join our [Discord server](https://discord.gg/s3mCmxecZR). You can leave suggestions here on [Github](https://github.com/KevinGiesberts/Virtual-Learning-Lab), or in our [SubReddit](https://www.reddit.com/r/VirtualLearningLab/hot/).
 
